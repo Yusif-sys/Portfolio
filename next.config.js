@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
+// Change this to your repository name if different
+const repoName = 'Portfolio'
+
 const nextConfig = {
-  images: {
-    domains: ['github.com', 'linkedin.com'],
-  },
-  swcMinify: true,
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : ''
 }
 
 module.exports = nextConfig

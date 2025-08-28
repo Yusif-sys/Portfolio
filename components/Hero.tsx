@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Download } from 'lucide-react'
-import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -33,13 +32,13 @@ export default function Hero() {
             className="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed mb-12"
           >
             <p>
-              I&apos;m a CS Student specializing in AI and Full-Stack development, passionate about crafting innovative solutions through code.
+              Hi,I&apos;m Yusif, a second year CS Student and developer focused on building the future with code. I&apos;m interested in AI and Full-Stack development.
             </p>
             <p>
-              From designing intuitive user interfaces to building AI-powered applications, I collaborate with teams to build high-quality, scalable solutions that enhance user experiences.
+              You&apos;ll find projects that reflect my skills and growth as a developer. From designing intuitive user interfaces to building AI-powered applications, I collaborate with teams to build high-quality, scalable solutions that enhance user experiences.
             </p>
             <p>
-              Organized, curious, and always eager to learn, I thrive on solving complex problems. Also, a runner training for a marathon and always exploring new technologies.
+              Always eager to learn, I thrive on solving complex problems. Outside of coding, I enjoy watching Formula 1 and combat sports. Feel free to reach out to me!
             </p>
           </motion.div>
 
@@ -63,38 +62,6 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Hammer positioned safely */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="absolute right-8 top-1/2 transform -translate-y-1/2 pointer-events-none"
-      >
-        <motion.div
-          animate={{
-            rotate: [0, -2, 2, -2, 0],
-            y: [0, -5, 0]
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <Image
-            src="/hammer.jpg"
-            alt="Hammer and Nail"
-            width={70}
-            height={70}
-            className="object-contain"
-            style={{
-              filter: 'brightness(1.1) contrast(1.1)',
-              mixBlendMode: 'multiply'
-            }}
-          />
-        </motion.div>
-      </motion.div>
     </section>
   )
 }
