@@ -6,7 +6,11 @@ import { Download } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 relative bg-black">
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center pt-20 relative bg-black text-white"
+      style={{ backgroundColor: '#000000', color: '#ffffff' }}
+    >
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -20,6 +24,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-6xl text-white mb-8"
+            style={{ color: '#ffffff' }}
           >
             Yusif.
           </motion.h1>
@@ -30,6 +35,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed mb-12"
+            style={{ color: '#d1d5db' }}
           >
             <p>
               Hi,I&apos;m Yusif, a second year CS Student and developer focused on building the future with code. I&apos;m interested in AI and Full-Stack development.
@@ -54,6 +60,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="self-start px-8 py-4 bg-white text-black rounded-lg font-normal hover:bg-gray-200 transition-colors duration-200 inline-flex items-center gap-2"
+                style={{ backgroundColor: '#ffffff', color: '#000000' }}
               >
                 Download Resume
                 <Download size={20} />

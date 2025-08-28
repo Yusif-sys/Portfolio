@@ -1,85 +1,64 @@
+/* CSS RESET - Force black background on everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html, body, #__next, main, div, section, article, aside, header, footer, nav {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* CRITICAL: Force black background immediately */
+html, body, #__next, main, div, section {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
 @layer base {
-  :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
-    --text-primary: #111827;
-    --text-secondary: #6b7280;
-    --border-color: #e5e7eb;
-    --accent-color: #3b82f6;
-    --nav-bg: rgba(255, 255, 255, 0.8);
-    --button-bg: #111827;
-    --button-text: #ffffff;
-    --button-hover: #1f2937;
-  }
-
-  [data-theme="dark"] {
-    --bg-primary: #000000;
-    --bg-secondary: #111827;
-    --text-primary: #ffffff;
-    --text-secondary: #d1d5db;
-    --border-color: #374151;
-    --accent-color: #60a5fa;
-    --nav-bg: rgba(0, 0, 0, 0.8);
-    --button-bg: #ffffff;
-    --button-text: #000000;
-    --button-hover: #f3f4f6;
-  }
-
   html {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: #000000 !important;
+    color: #ffffff !important;
   }
 
   body {
     font-feature-settings: 'rlig' 1, 'calt' 1;
     letter-spacing: -0.025em;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: #000000 !important;
+    color: #ffffff !important;
   }
 
-  /* Force dark mode colors on all elements */
+  /* Force dark theme on all elements */
+  [data-theme="dark"] html,
+  [data-theme="dark"] body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
   [data-theme="dark"] * {
-    color: var(--text-primary) !important;
+    background-color: #000000 !important;
   }
 
-  [data-theme="dark"] h1,
-  [data-theme="dark"] h2,
-  [data-theme="dark"] h3,
-  [data-theme="dark"] h4,
-  [data-theme="dark"] h5,
-  [data-theme="dark"] h6 {
-    color: var(--text-primary) !important;
+  [data-theme="dark"] section,
+  [data-theme="dark"] div,
+  [data-theme="dark"] main {
+    background-color: #000000 !important;
   }
 
-  [data-theme="dark"] p,
-  [data-theme="dark"] span,
-  [data-theme="dark"] div {
-    color: var(--text-primary) !important;
+  /* Additional aggressive overrides */
+  * {
+    background-color: #000000 !important;
   }
 
-  [data-theme="dark"] .text-gray-900 {
-    color: var(--text-primary) !important;
-  }
-
-  [data-theme="dark"] .text-gray-600 {
-    color: var(--text-secondary) !important;
-  }
-
-  [data-theme="dark"] .bg-white {
-    background-color: var(--bg-primary) !important;
-  }
-
-  [data-theme="dark"] .bg-gray-50 {
-    background-color: var(--bg-secondary) !important;
-  }
-
-  [data-theme="dark"] .border-gray-200 {
-    border-color: var(--border-color) !important;
+  main, section, div {
+    background-color: #000000 !important;
   }
 }
 
@@ -109,9 +88,7 @@
   }
 
   .card {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    @apply rounded-lg p-6 shadow-sm;
+    @apply bg-gray-900 border border-gray-700 rounded-lg p-6 shadow-sm;
   }
 
   .card-hover {
@@ -123,48 +100,22 @@
   }
 
   .btn-primary {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    @apply px-6 py-3 rounded-lg font-normal hover:opacity-90 transition-opacity duration-200;
+    @apply bg-white text-black px-6 py-3 rounded-lg font-normal hover:bg-gray-200 transition-opacity duration-200;
   }
 
   .btn-secondary {
-    border: 2px solid var(--button-bg);
-    color: var(--button-bg);
-    @apply px-6 py-3 rounded-lg font-normal hover:bg-opacity-10 hover:bg-current transition-all duration-200;
+    @apply border-2 border-white text-white px-6 py-3 rounded-lg font-normal hover:bg-white hover:text-black transition-all duration-200;
   }
 
   .nav-link {
-    color: var(--text-secondary);
-    @apply hover:text-blue-600 transition-colors duration-200;
+    @apply text-gray-300 hover:text-blue-400 transition-colors duration-200;
   }
 
   .project-card {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    @apply rounded-lg p-6 hover:shadow-lg transition-all duration-200;
+    @apply bg-gray-900 border border-gray-700 rounded-lg p-6 hover:shadow-lg transition-all duration-200;
   }
 
   .skill-badge {
-    background-color: var(--bg-secondary);
-    color: var(--text-secondary);
-    @apply px-3 py-1 rounded-full text-sm font-normal;
-  }
-
-  /* Dark mode specific overrides */
-  [data-theme="dark"] .bg-white\/80 {
-    background-color: var(--nav-bg) !important;
-  }
-
-  [data-theme="dark"] .bg-gray-100 {
-    background-color: var(--bg-secondary) !important;
-  }
-
-  [data-theme="dark"] .text-gray-600 {
-    color: var(--text-secondary) !important;
-  }
-
-  [data-theme="dark"] .hover\:bg-gray-200:hover {
-    background-color: var(--button-hover) !important;
+    @apply bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-normal;
   }
 }

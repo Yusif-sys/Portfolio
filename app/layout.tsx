@@ -22,7 +22,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning data-theme="dark">
-      <body className={`antialiased ${josefin.variable} ${josefin.className}`}>
+      <head>
+        <style>{`
+          html, body, #__next, main, div, section {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+          }
+          * {
+            background-color: #000000 !important;
+          }
+        `}</style>
+      </head>
+      <body 
+        className={`antialiased bg-black text-white ${josefin.variable} ${josefin.className}`}
+        style={{ backgroundColor: '#000000', color: '#ffffff' }}
+      >
         <Navbar />
         {children}
       </body>

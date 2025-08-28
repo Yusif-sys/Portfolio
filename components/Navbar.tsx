@@ -12,7 +12,10 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
+    <nav 
+      className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm"
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
+    >
       <div className="container-max">
         <div className="flex items-center justify-center h-16">
           {/* Navigation Links */}
@@ -23,7 +26,8 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="nav-link cursor-pointer"
+                  className="nav-link cursor-pointer text-white"
+                  style={{ color: '#ffffff' }}
                 >
                   {item.name}
                 </motion.div>
