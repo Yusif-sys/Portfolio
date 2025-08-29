@@ -31,6 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning data-theme="dark">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <style>{`
           html, body, #__next, main, div, section {
             background-color: #000000 !important;
