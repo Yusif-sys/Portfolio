@@ -87,15 +87,17 @@ export default function Projects() {
                     <Github size={18} />
                     View Code
                   </Link>
-                  <Link
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 border-2 border-white text-white rounded-lg font-normal hover:bg-white hover:text-black transition-all duration-200"
-                  >
-                    <ExternalLink size={18} />
-                    Live Demo
-                  </Link>
+                  {project.demo && (
+                    <Link
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border-2 border-white text-white rounded-lg font-normal hover:bg-white hover:text-black transition-all duration-200"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </Link>
+                  )}
                 </div>
               </div>
 
