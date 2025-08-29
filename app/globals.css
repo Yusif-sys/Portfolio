@@ -22,6 +22,36 @@ html, body, #__next, main, div, section {
   color: #ffffff !important;
 }
 
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0 !important;
+  }
+  
+  /* Ensure content doesn't hide behind fixed navbar */
+  main {
+    padding-top: 4rem !important;
+  }
+  
+  /* Mobile touch targets */
+  button, a {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+  
+  /* Mobile text sizing */
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Mobile spacing */
+  .container-max {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 @layer base {
   html {
     background-color: #000000 !important;
@@ -33,6 +63,8 @@ html, body, #__next, main, div, section {
     letter-spacing: -0.025em;
     background-color: #000000 !important;
     color: #ffffff !important;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
   }
 
   /* Force dark theme on all elements */
