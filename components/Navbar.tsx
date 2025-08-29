@@ -23,37 +23,42 @@ export default function Navbar() {
       style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)' }}
     >
       <div className="container-max">
-        <div className="flex items-center justify-between h-16 px-4">
-          {/* Logo/Brand */}
-          <Link href="/" className="text-xl font-bold text-white">
-            Yusif
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <Link key={item.name} href={item.href}>
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="nav-link cursor-pointer text-white hover:text-blue-400 transition-colors"
-                  style={{ color: '#ffffff' }}
-                >
-                  {item.name}
-                </motion.div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
+        <div className="flex items-center h-16 px-4 relative">
+          {/* Mobile Menu Button - Left side */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-white hover:text-blue-400 transition-colors"
+            className="md:hidden p-2 text-white hover:text-blue-400 transition-colors absolute left-4"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
+          {/* Logo/Brand - Centered on mobile, left on desktop */}
+          <Link href="/" className="text-xl font-bold text-white md:mr-8 mx-auto md:mx-0">
+            Yusif
+          </Link>
+
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              {navItems.map((item, index) => (
+                <Link key={item.name} href={item.href}>
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="nav-link cursor-pointer text-white hover:text-blue-400 transition-colors"
+                    style={{ color: '#ffffff' }}
+                  >
+                    {item.name}
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Spacer for mobile to balance the logo */}
+          <div className="md:hidden w-10"></div>
         </div>
 
         {/* Mobile Navigation Menu */}
