@@ -34,13 +34,13 @@ export default function Navbar() {
           </button>
 
           {/* Logo/Brand - Centered on mobile, left on desktop */}
-          <Link href="/" className="text-xl font-bold text-white md:mr-8 mx-auto md:mx-0">
+          <Link href="/" className="text-xl font-bold text-white md:mr-12 mx-auto md:mx-0">
             Yusif
           </Link>
 
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center space-x-8">
+          {/* Desktop Navigation - More centered */}
+          <div className="hidden md:flex items-center justify-center flex-1 -ml-8">
+            <div className="flex items-center space-x-10">
               {navItems.map((item, index) => (
                 <Link key={item.name} href={item.href}>
                   <motion.div

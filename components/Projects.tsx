@@ -6,11 +6,10 @@ import Link from 'next/link'
 
 const projects = [
   {
-    title: 'AI Chat Application',
-    description: 'Built this to explore natural language processing and create a more intuitive way for users to interact with AI systems. The goal was to make AI conversations feel natural and helpful.',
-    tech: ['React', 'Node.js', 'OpenAI API', 'TailwindCSS'],
-    github: 'https://github.com/Yusif-sys/ai-chat-app',
-    demo: 'https://ai-chat-demo.vercel.app'
+    title: 'BeanThere',
+    description: 'BeanThere is a web application that streamlines coffee shop discovery by combining location-based filtering with preference-driven recommendations. Built with Next.js and deployed on Vercel, it integrates external APIs for real-time data and uses a clean, responsive UI for seamless navigation. The goal is to reduce the friction of finding the right café by aligning user intent with contextual results.',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Node.js', 'External APIs',],
+    github: 'https://github.com/Yusif-sys/BeanThere.git'
   },
   {
     title: 'E-commerce Platform',
