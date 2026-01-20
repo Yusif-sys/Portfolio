@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const projects = [
   {
-    title: 'Bitcoin bot',
+    title: ' Prediction Market Trading Bot',
     description: 'Built an automated Python trading bot for Kalshi prediction markets that continuously monitors live order books, evaluates market conditions using configurable strategy logic, and executes trades with secure, environment-based authentication and modular architecture.',
     tech: ['Python', 'RSA-PSS', 'Kalshi API', 'Cryptography', 'REST APIs'],
     github: 'https://github.com/Yusif-sys/BTCBOTKALSHI'
