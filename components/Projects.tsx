@@ -6,6 +6,12 @@ import Link from 'next/link'
 
 const projects = [
   {
+    title: 'Bitcoin bot',
+    description: 'Built an automated Python trading bot for Kalshi prediction markets that continuously monitors live order books, evaluates market conditions using configurable strategy logic, and executes trades with secure, environment-based authentication and modular architecture.',
+    tech: ['Python', 'RSA-PSS', 'Kalshi API', 'Cryptography', 'REST APIs'],
+    github: 'https://github.com/Yusif-sys/BTCBOTKALSHI'
+  },
+  {
     title: 'BeanThere',
     description: 'BeanThere is a web application that streamlines coffee shop discovery by combining location-based filtering with preference-driven recommendations. Built with Next.js and deployed on Vercel, it integrates external APIs for real-time data and uses a clean, responsive UI for seamless navigation. The goal is to reduce the friction of finding the right café by aligning user intent with contextual results.',
     tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Node.js', 'External APIs'],
