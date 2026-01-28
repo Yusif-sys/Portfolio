@@ -13,6 +13,13 @@ const projects = [
     github: 'https://github.com/Yusif-sys/BTCBOTKALSHI'
   },
   {
+    title: 'Polymarket Whale Tracker',
+    description:
+      'Built a real-time Polymarket monitoring system that tracks large on-chain positions and size-able trades, aggregates them into whale profiles, and pushes concise trade alerts to a private Telegram channel for fast decision-making.',
+    tech: ['TypeScript', 'Node.js', 'Polymarket API', 'Telegram Bot API'],
+    github: 'https://github.com/Yusif-sys/Whaletrack.git'
+  },
+  {
     title: 'Sleep Detection Camera',
     description:
       'Developed a real-time drowsiness detection system that uses a camera feed and computer vision models to track eye state, detect microsleeps, and trigger alerts to prevent fatigue-related incidents.',
