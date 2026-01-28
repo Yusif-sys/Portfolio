@@ -7,9 +7,17 @@ import Link from 'next/link'
 const projects = [
   {
     title: 'Prediction Market Trading Bot',
-    description: 'Built an automated Python trading bot for Kalshi prediction markets that continuously monitors live order books, evaluates market conditions using configurable strategy logic, and executes trades with secure, environment-based authentication and modular architecture.',
+    description:
+      'Built an automated Python trading bot for Kalshi prediction markets that continuously monitors live order books, evaluates market conditions using configurable strategy logic, and executes trades with secure, environment-based authentication and modular architecture.',
     tech: ['Python', 'RSA-PSS', 'Kalshi API', 'Cryptography', 'REST APIs'],
     github: 'https://github.com/Yusif-sys/BTCBOTKALSHI'
+  },
+  {
+    title: 'Sleep Detection Camera',
+    description:
+      'Developed a real-time drowsiness detection system that uses a camera feed and computer vision models to track eye state, detect microsleeps, and trigger alerts to prevent fatigue-related incidents.',
+    tech: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision'],
+    github: 'https://github.com/Yusif-sys/SLEEPDETECTION.git'
   },
   {
     title: 'BeanThere',
