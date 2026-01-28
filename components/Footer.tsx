@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Heart } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -14,15 +13,7 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-gray-300">Made with</span>
-            <Heart size={16} className="text-red-500 fill-current" />
-            <span className="text-gray-300">by Yusif Imanov</span>
-          </div>
-
-          <p className="text-gray-400 text-sm">
-            © 2024 Yusif Imanov. All rights reserved.
-          </p>
+          <p className="text-gray-400 text-sm mb-4">© 2024. All rights reserved.</p>
 
           <div className="mt-6 flex justify-center space-x-6">
             <a

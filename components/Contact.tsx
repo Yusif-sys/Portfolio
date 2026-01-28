@@ -45,7 +45,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Have a great idea or simply want to chat? Feel free to contact me through any of these channels.
+            You can contact me through any of these channels. Will respond within 24 hours.
           </p>
         </motion.div>
 
@@ -84,25 +84,6 @@ export default function Contact() {
               </motion.a>
             ))}
           </div>
-        </motion.div>
-
-        {/* Resume Download */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center"
-        >
-          <a
-            href="/Yusif_Imanov_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-lg font-normal hover:bg-gray-200 transition-colors duration-200"
-          >
-            <Download size={20} />
-            Download Resume
-          </a>
         </motion.div>
 
         {/* Additional Message */}

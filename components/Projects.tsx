@@ -32,20 +32,6 @@ const projects = [
     description: 'BeanThere is a web application that streamlines coffee shop discovery by combining location-based filtering with preference-driven recommendations. Built with Next.js and deployed on Vercel, it integrates external APIs for real-time data and uses a clean, responsive UI for seamless navigation. The goal is to reduce the friction of finding the right café by aligning user intent with contextual results.',
     tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Node.js', 'External APIs'],
     github: 'https://github.com/Yusif-sys/BeanThere.git'
-  },
-  {
-    title: 'E-commerce Platform',
-    description: 'Created this platform to solve the challenge of building a scalable, user-friendly online shopping experience. Focused on performance and user experience.',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-    github: 'https://github.com/Yusif-sys/ecommerce-platform',
-    demo: 'https://ecommerce-demo.vercel.app'
-  },
-  {
-    title: 'Task Management Tool',
-    description: 'Built this tool to help teams collaborate more effectively. The motivation was to create something that actually makes project management feel simple and intuitive.',
-    tech: ['Vue.js', 'Firebase', 'TailwindCSS', 'Vuex'],
-    github: 'https://github.com/Yusif-sys/task-manager',
-    demo: 'https://task-manager-demo.vercel.app'
   }
 ]
 
