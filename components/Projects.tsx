@@ -17,7 +17,8 @@ const projects = [
     description:
       'Developed a real-time drowsiness detection system that uses a camera feed and computer vision models to track eye state, detect microsleeps, and trigger alerts to prevent fatigue-related incidents.',
     tech: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision'],
-    github: 'https://github.com/Yusif-sys/SLEEPDETECTION.git'
+    github: 'https://github.com/Yusif-sys/SLEEPDETECTION.git',
+    demo: 'https://sleepdetection.vercel.app/'
   },
   {
     title: 'BeanThere',
