@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="w-full flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start"
           >
-            <Link href="/Yusif%20Imanov%20Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/Yusif_Imanov_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

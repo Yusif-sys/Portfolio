@@ -94,10 +94,15 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center"
         >
-          <button className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-lg font-normal hover:bg-gray-200 transition-colors duration-200">
+          <a
+            href="/Yusif_Imanov_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-lg font-normal hover:bg-gray-200 transition-colors duration-200"
+          >
             <Download size={20} />
             Download Resume
-          </button>
+          </a>
         </motion.div>
 
         {/* Additional Message */}
